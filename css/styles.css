@@ -120,12 +120,10 @@ ul {
     margin-left: 30px;
 }
 
-.auth-nav-item {
+.auth-nav .info {
     padding-top: 32px;
     padding-bottom: 32px;
-}
 
-.auth-nav .info {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;

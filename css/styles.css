@@ -108,12 +108,15 @@ ul {
 
 /* auth-nav */
 
+.address-container {
+    margin-left: auto;
+}
+
 .auth-nav {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
-    margin-left: 305px;
 }
 
 .auth-nav-item + .auth-nav-item {
@@ -121,9 +124,6 @@ ul {
 }
 
 .auth-nav .info {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -140,7 +140,11 @@ ul {
 
 /* hero */
 
-.container-hero {
+.hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
@@ -155,14 +159,13 @@ ul {
     background-size: cover;
 }
 
-.hero {
-    text-align: center;
+.container-hero {
+    max-width: 696px;
 }
 
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
 
     color: var(--white-color);
     font-weight: 900;

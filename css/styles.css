@@ -216,6 +216,17 @@ ul {
 
 /* features */
 
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .feature-list {
     display: flex;
     margin-top: 0;
@@ -223,40 +234,12 @@ ul {
     padding: 0;
 }
 
-.feature-list .feature-list-item {
-    width: 270px;
-}
-
-.feature-list-item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background-size: contain;
+.icon-block {
+    display: flex;
     background: var(--complementary-color3);
-}
-
-.icon-antenna::before {
-    background-image: url("../images/antena-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-clock::before {
-    background-image: url("../images/clock-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-diagram::before {
-    background-image: url("../images/diagram-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-astronaut::before {
-    background-image: url("../images/astronaut-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    border-radius: 4px;
 }
 
 .feature-list-item + .feature-list-item,
@@ -267,7 +250,7 @@ ul {
 }
 
 .feature-list .title {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
 
     color: var(--title-text-color);

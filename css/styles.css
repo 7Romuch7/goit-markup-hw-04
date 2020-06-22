@@ -123,6 +123,14 @@ ul {
     margin-left: 30px;
 }
 
+.mail .icon-mail {
+    margin-right: 10px;
+}
+
+.phone-number {
+    margin-right: 10px;
+}
+
 .auth-nav .info {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -360,11 +368,6 @@ ul {
 .links-list .social-link:hover,
 .links-list .social-link:focus {
     color: var(--accent-color);
-}
-
-.network {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .links-list > .social + .social {

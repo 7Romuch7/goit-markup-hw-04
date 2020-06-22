@@ -361,16 +361,6 @@ ul {
     justify-content: center;
 }
 
-.links-list .social-link {
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
-
-.links-list .social-link:hover,
-.links-list .social-link:focus {
-    color: var(--accent-color);
-}
-
 .links-list > .social + .social {
     margin-left: 10px;
 }
@@ -474,21 +464,6 @@ ul {
     padding: 0;
 }
 
-.network-2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.links-list-2 .social-link-2 {
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.links-list-2 .social-link-2:hover,
-.links-list-2 .social-link-2:focus {
-    color: var(--accent-color);
-}
-
 .links-list-2 > .social-2 + .social-2 {
     margin-left: 10px;
 }
@@ -496,19 +471,6 @@ ul {
 .links-list-2 > .social {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.copyright {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 18px;
-    padding-bottom: 21px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-    color: var(--complementary-color2);
-    font-size: 12px;
-    line-height: 1.71;
-    text-align: center;
 }
 
 /* стилизация порфолио*/

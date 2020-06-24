@@ -123,15 +123,22 @@ ul {
     margin-left: 30px;
 }
 
-.mail .icon-mail {
+.mail .icon-mail, .icon-phone {
     margin-right: 10px;
 }
 
-.phone-number {
-    margin-right: 10px;
+.icon-mail, .icon-phone {
+    --color1: #757575;
+}
+
+.icon-mail:hover,
+.icon-phone:hover {
+    --color1: #2196F3;
 }
 
 .auth-nav .info {
+    margin: 0;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -369,12 +376,14 @@ ul {
     --color3: #FFFFFF;
     --color4: #AFB1B8;
     --color5: #AFB1B8;
+    --color6: rgba(255, 255, 255, 0.1);
 }
 
 .icon:hover, .icon:focus {
     --color3: #2196F3;
     --color4: #2196F3;
     --color5: #FFFFFF;
+    --color6: #2196F3;
 }
 
 /* customers */
@@ -489,6 +498,7 @@ ul {
 
 .header-portfolio {
     margin-bottom: 93px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .section-2 {

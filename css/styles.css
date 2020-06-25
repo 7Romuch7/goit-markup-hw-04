@@ -16,6 +16,7 @@
     --complementary-color: rgba(255, 255, 255, 0.6);
     --complementary-color2: rgba(255, 255, 255, 0.4);
     --complementary-color3: #F5F4FA;
+    --complementary-color4: rgba(255, 255, 255, 0.1);
 }
 
 /* Стилизация студии*/
@@ -372,15 +373,23 @@ ul {
     margin-left: 10px;
 }
 
-.icon {
-    --color3: #FFFFFF;
-    --color4: #AFB1B8;
-    --color5: #AFB1B8;
-    --color6: rgba(255, 255, 255, 0.1);
+.social-list {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    --color3: #AFB1B8;
 }
 
-.icon:hover, .icon:focus {
-    --color3: #2196F3;
+.social-list:hover {
+    background: var(--accent-color);
+    --color3: #FFFFFF;
+}
+
+
+.icon1:hover, .icon:focus {
+    background: var(--accent-color);
+    --color3: #FFFFFF;
     --color4: #2196F3;
     --color5: #FFFFFF;
     --color6: #2196F3;
@@ -492,6 +501,19 @@ ul {
 .links-list-2 > .social {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.social-list-2 {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--complementary-color4);
+    --color3: #FFFFFF;
+}
+
+.social-list-2:hover {
+    background: var(--accent-color);
 }
 
 /* стилизация порфолио*/

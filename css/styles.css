@@ -6,6 +6,8 @@
 /* дополнительный цвет rgba(255, 255, 255, 0.6) */
 /* дополнительный цвет2 rgba(255, 255, 255, 0.4) */
 /* дополнительный цвет3 #F5F4FA */
+/* дополнительный цвет4 rgba(255, 255, 255, 0.1);*/
+/* дополнительный цвет5 #2F303A*/
 
 :root {
     --primary-text-color: #757575;
@@ -17,6 +19,7 @@
     --complementary-color2: rgba(255, 255, 255, 0.4);
     --complementary-color3: #F5F4FA;
     --complementary-color4: rgba(255, 255, 255, 0.1);
+    --complementary-color5: #2F303A;
 }
 
 /* Стилизация студии*/
@@ -132,12 +135,14 @@ ul {
     --color1: #757575;
 }
 
-.icon-mail:hover,
-.icon-phone:hover {
+.icon-mail:hover, .icon-mail:focus,
+.icon-phone:hover, .icon-phone:focus {
     --color1: #2196F3;
 }
 
 .auth-nav .info {
+    display: flex;
+    align-items: center;
     margin: 0;
 
     color: var(--primary-text-color);
@@ -203,7 +208,7 @@ ul {
     margin-bottom: 0;
     border: 1px solid transparent;
 
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: var(--white-color);
     font-weight: 700;
     font-size: 16px;
@@ -374,25 +379,16 @@ ul {
 }
 
 .social-list {
-    display: block;
+    display: inline-block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     --color3: #AFB1B8;
 }
 
-.social-list:hover {
+.social-list:hover, .social-list:focus {
     background: var(--accent-color);
     --color3: #FFFFFF;
-}
-
-
-.icon1:hover, .icon:focus {
-    background: var(--accent-color);
-    --color3: #FFFFFF;
-    --color4: #2196F3;
-    --color5: #FFFFFF;
-    --color6: #2196F3;
 }
 
 /* customers */
@@ -415,14 +411,26 @@ ul {
     border-radius: 4px;
 }
 
+.icon {
+    --color4: #AFB1B8;
+}
+
+.icon:hover, .icon:focus {
+    --color4: #2196F3;
+}
+
 .list-customers-item + .list-customers-item {
     margin-left: 30px
+}
+
+.customers-link:hover, .customers-link:focus {
+    border-color: var(--accent-color);
 }
 
 /* footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--complementary-color5);
 }
 
 .logo .logo-white {
@@ -655,6 +663,13 @@ ul {
 
 .works-list-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.works-list-item:hover,
+.works-list-item:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .data {

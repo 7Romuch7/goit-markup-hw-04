@@ -127,7 +127,7 @@ ul {
     margin-left: 30px;
 }
 
-.mail .icon-mail, .icon-phone {
+.icon-mail, .icon-phone {
     margin-right: 10px;
 }
 
@@ -140,8 +140,8 @@ ul {
     --color1: #2196F3;
 }
 
-.auth-nav .info {
-    display: flex;
+.info {
+    display: inline-flex;
     align-items: center;
     margin: 0;
 
